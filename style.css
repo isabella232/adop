@@ -1,0 +1,48 @@
+html {
+  background: #ccc;
+  color: #111;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  box-sizing: border-box;
+  font-size: 16pt;
+  margin: auto;
+  max-width: 960px;
+  min-height: 100%;
+  padding: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+h1 abbr:after {
+  content: attr(title);
+  display: block;
+  font-size: 0.5em;
+}
+
+section,
+footer {
+  margin: 0 -2em;
+  padding: 2em;
+}
+
+section:first-of-type {
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+section:first-of-type a {
+  color: inherit;
+  display: block;
+  font-size: 2em;
+  text-decoration: inherit;
+}
+
+section:nth-of-type(even) {
+  background: #ddd;
+}
