@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
 html {
-  background: #2D2D2D;
-  color: #888;
+  background: #222;
+  color: #414141;
   height: 100%;
   font-family: "Open Sans", sans-serif;
 }
@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-  background: #2D2D2D;
+  background: #222;
   color: #fff;
   font-size: 2.5em;
   font-weight: 500;
@@ -34,11 +34,16 @@ h1 abbr:after {
 }
 
 section {
-  padding: 2em;
+  padding: 2em 4em;
+}
+
+section h2 {
+  color: #222;
+  text-align: center;
 }
 
 section:first-of-type {
-  background: #79bb82!important;
+  background: #79bb82;
   color: #fff;
   text-align: center;
 }
@@ -50,16 +55,6 @@ section:first-of-type a {
   text-decoration: inherit;
 }
 
-section:nth-of-type(odd) {
-  background: #BFBFB3;
-  color: #fff;
-}
-
-section h2 {
-  font-weight: 500;
-  text-align: center;
-}
-
 ul {
   line-height: 2;
   list-style: none;
@@ -68,13 +63,12 @@ ul {
 }
 
 footer {
-  background: #191919;
-  color: #fff;
+  background: #BFBFB3;
   font-size: 0.75em;
   padding: 1em;
   text-align: center;
 }
 
 footer a {
-  color: #fff;
+  color: #1b9832;
 }
