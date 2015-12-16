@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: url("bkgd.svg") 0 100% no-repeat #fff;
   box-sizing: border-box;
   font-size: 16pt;
   margin: auto;
@@ -22,8 +22,15 @@ h1 {
   font-size: 2.5em;
   font-weight: 500;
   margin: 0;
-  padding: 1em;
+  padding: 0 1em 1em 0;
   text-align: center;
+}
+
+h1:before {
+  content: url("logo.svg");
+  display: block;
+  margin: 0 auto;
+  width: 200px;
 }
 
 h1 abbr:after {
