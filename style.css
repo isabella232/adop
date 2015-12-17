@@ -16,6 +16,17 @@ body {
   min-height: 100%;
 }
 
+a {
+  color: #1b9832;
+}
+
+ul {
+  line-height: 2;
+  list-style: none;
+  font-size: 0.8em;
+  padding-left: 0;
+}
+
 h1 {
   background: #222;
   color: #fff;
@@ -62,20 +73,9 @@ section:first-of-type a {
   text-decoration: inherit;
 }
 
-ul {
-  line-height: 2;
-  list-style: none;
-  font-size: 0.8em;
-  padding-left: 0;
-}
-
 footer {
   background: #BFBFB3;
   font-size: 0.75em;
   padding: 1em;
   text-align: center;
-}
-
-footer a {
-  color: #1b9832;
 }
