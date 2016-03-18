@@ -1,14 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
 html {
-  background: #222;
+  background: url("mountain.jpg") no-repeat center center fixed;
+  background-size: cover;
   color: #414141;
   height: 100%;
   font-family: "Open Sans", sans-serif;
 }
 
 body {
-  background: url("bkgd.svg") 0 100% no-repeat #fff;
   box-sizing: border-box;
   font-size: 16pt;
   margin: auto;
@@ -28,7 +28,7 @@ ul {
 }
 
 h1 {
-  background: #222;
+  background: rgba(34,34,34,0.8);
   color: #fff;
   font-size: 2.5em;
   font-weight: 500;
@@ -52,6 +52,7 @@ h1 abbr:after {
 }
 
 section {
+  background: #fff;
   padding: 2em 4em;
 }
 
@@ -71,6 +72,10 @@ section:first-of-type a {
   display: block;
   font-size: 2em;
   text-decoration: inherit;
+}
+
+section:last-of-type {
+  background: url("bkgd.svg") 100% 100% no-repeat #fff;
 }
 
 footer {
