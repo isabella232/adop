@@ -84,3 +84,25 @@ footer {
   padding: 1em;
   text-align: center;
 }
+
+#ars, #urps {
+  display: inline-block;
+  padding: 1em 0;
+}
+
+#ars a, #urps a {
+  font-size: 0;
+}
+
+#ars a:before, #urps a:before {
+  display: inline-block;
+  width: 300px;
+}
+
+#ars a:before {
+  content: url('ars.png');
+}
+
+#urps a:before {
+  content: url('urps.png');
+}
