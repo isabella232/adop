@@ -1,0 +1,11 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+  <h2>Téléchargement</h2>
+  <ul>
+    <li><a href="{{ url_for('static', filename='documents/.pdf') }}">Charte de l'association</a></li>
+    <li><a href="{{ url_for('static', filename='documents/.pdf') }}">Statuts de l'association</a></li>
+    <li><a href="{{ url_for('static', filename='documents/.pdf') }}">Plaquette de présentation</a></li>
+    <li><a href="{{ url_for('static', filename='documents/.pdf') }}">Fonctionnement de l'association</a></li>
+  </ul>
+{% endblock body %}

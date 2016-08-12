@@ -1,0 +1,50 @@
+{% extends '_layout.html' %}
+
+{% block body %}
+  <h2>Historique</h2>
+  <p>
+    La problématique des pharmaciens en difficulté, que ce soit par syndrome
+    d’épuisement professionnel, addiction ou maladie, impose un devoir de
+    confraternité et la prise de conscience de sa dimension de santé publique.
+  </p>
+  <p>
+    Des pharmaciens de la région Rhône-Alpes ont décidé de s’unir afin de créer
+    une association dédiée à l’écoute de leurs confrères en difficulté.
+  </p>
+  <p>
+    Une étude exhaustive de diverses expériences en France et à l’étranger a
+    permis de retenir l’intérêt d’un dispositif simple intitulé ADOP – Aide et
+    Dispositif d’Orientation des Pharmaciens.
+  </p>
+  <h2>Les membres fondateurs</h2>
+  <dl>
+    <dt>
+      <img src="{{ url_for('static', filename='images/hugues_videlier.jpg') }}" alt="Hugues Videlier" />
+      Hugues Videlier
+    </dt>
+    <dd>
+      Président
+    </dd>
+    <dt>
+      <img src="{{ url_for('static', filename='images/didier_vieilly.jpg') }}" alt="Didier Vieilly" />
+      Didier Vieilly
+    </dt>
+    <dd>
+      Vice-président
+    </dd>
+    <dt>
+      <img src="{{ url_for('static', filename='images/vincent_viel.jpg') }}" alt="Vincent Viel" />
+      Vincent Viel
+    </dt>
+    <dd>
+      Secrétaire
+    </dd>
+    <dt>
+      <img src="{{ url_for('static', filename='images/jean-luc_lepetit.jpg') }}" alt="Jean-Luc Lepetit" />
+      Jean-Luc Lepetit
+    </dt>
+    <dd>
+      Trésorier
+    </dd>
+  </dl>
+{% endblock body %}

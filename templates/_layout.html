@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADOP - {% block title %}Aide et Dispositif d'Orientation des Pharmaciens − Région Rhône-Alpes{% endblock title %}</title>
+    <link type="image/png" rel="icon" href="{{ url_for('static', filename='favicon.png') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.sass.css') }}" />
+  </head>
+
+  <body id="{{ page }}">
+    <header>
+      <h1>Adop</h1>
+      <p>Aide et Dispositif d'Orientation des Pharmaciens</p>
+      <p>Région Rhône-Alpes</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('page', page='home') }}">Accueil</a></li>
+        <li><a href="{{ url_for('page', page='history') }}">Historique</a></li>
+        <li><a href="{{ url_for('page', page='actions') }}">Actions</a></li>
+        <li><a href="{{ url_for('page', page='operation') }}">Fonctionnement</a></li>
+        <li><a href="{{ url_for('page', page='news') }}">Actualités</a></li>
+        <li><a href="{{ url_for('page', page='download') }}">Téléchargement</a></li>
+        <li><a href="{{ url_for('page', page='links') }}">Liens partenaires</a></li>
+        <li><a href="{{ url_for('page', page='contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      {% block body %}{% endblock body %}
+    </main>
+  </body>
+</html>
