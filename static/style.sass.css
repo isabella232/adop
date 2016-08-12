@@ -1,10 +1,14 @@
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700';
 body {
   display: flex;
   flex-wrap: wrap;
-  margin: 0; }
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  min-height: 100vh; }
 
 header {
-  background: #bbb;
+  background: url(images/mountain.png) no-repeat center;
+  background-size: cover;
   padding: 2em;
   width: 100%; }
   header h1 {
@@ -16,22 +20,22 @@ header {
     margin: 0; }
 
 nav {
-  background: #ccc;
+  background: #79bb82;
   padding: 2em; }
   nav ul {
     list-style: none;
     padding: 0; }
     nav ul li {
-      border-bottom: 1px solid #bbb; }
+      /*border-bottom: 1px solid #bbb*/ }
       nav ul li a {
-        color: black;
-        font-weight: bold;
+        color: #fff;
+        /*font-weight: bold*/
         display: block;
         margin: 1em;
         text-decoration: inherit; }
 
 main {
-  background: #ddd;
+  /*background: #ddd*/
   flex: 1;
   padding: 2em; }
 
