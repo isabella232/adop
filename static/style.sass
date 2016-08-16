@@ -1,13 +1,30 @@
 @import 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700'
-$primary: #79bb82
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700'
+@import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700'
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200'
 
+$primary: #62ad96
+$text: #585858
+$title: #000
 
 body
+  background: #f7fafb
+  color: $text
   display: flex
   flex-wrap: wrap
-  font-family: 'Noto Sans', sans-serif
+  font-family: 'PT Sans', sans-serif
   margin: 0
   min-height: 100vh
+
+h1,h2,h3,h4,h5
+  color: #000
+  font-family: 'Source Sans', sans-serif
+  font-weight: 400
+
+h2
+  font-size: 2em
+  font-weight: 200
+  margin: 0
 
 header
   background: url(images/mountain.png) no-repeat center
@@ -25,24 +42,81 @@ header
     margin: 0
 
 nav
-  background: $primary
-  padding: 2em
+  background: #fff
+  border-right: 1px solid #eee
+  padding: 2em 5em
+  text-transform: uppercase
+
+  &:before
+    content: url(images/logo.svg)
+    display: block
+    width: 5em
 
   ul
     list-style: none
     padding: 0
 
     li
-      /*border-bottom: 1px solid #bbb*/
+      margin: 0 -2em
+
+      &:hover
+        a
+          color: darken($primary, 10%)
+          text-decoration: underline
 
       a
-        color: #fff
-        /*font-weight: bold*/
+        color: $primary
         display: block
-        margin: 1em
+        font-size: 0.9em
+        font-weight: bold
+        padding: 0.5em 2em 0.5em 0
         text-decoration: inherit
+        transition: color 0.5s
 
 main
-  /*background: #ddd*/
   flex: 1
-  padding: 2em
+  line-height: 1.8em
+  margin: 0 auto
+  max-width: 900px
+  padding: 4em 0
+
+  a
+    color: $primary
+    border: 1px solid $primary
+    display: inline-block
+    font-weight: 700
+    margin: 0.5em 0
+    padding: 1em 2em
+    text-decoration: none
+    transition: background 0.3s
+
+    &:hover
+      background: $primary
+      color: #fff
+
+  section
+    &#recto
+
+    &#verso
+
+    &#recto, &#verso
+      width: 50%
+      p
+        width: 50%
+
+        &:first-of-type
+          &:before
+            background: #c3c3c3
+            content: ""
+            display: block
+            height: 10em
+            margin: auto
+            width: 20em
+
+  dl
+    dd
+      margin-left: 0
+
+    img
+      display: block
+      width: 10em
