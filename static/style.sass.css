@@ -3,7 +3,7 @@
 @import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200';
 body {
-  background: #f7fafb;
+  background: #fff;
   color: #585858;
   display: flex;
   flex-flow: column wrap;
@@ -13,55 +13,82 @@ body {
 
 h1, h2, h3, h4, h5 {
   color: #000;
-  font-family: 'Source Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400; }
 
 h2 {
   font-size: 2em;
-  font-weight: 200;
+  font-weight: 600;
   margin: 0; }
+  h2:after {
+    background: #62ad96;
+    content: "";
+    display: block;
+    height: 3px;
+    margin-top: 0.5em;
+    width: 20px; }
+
+h3 {
+  color: #62ad96; }
 
 header {
-  height: 10em;
-  margin-left: 15em; }
+  background: url("images/mountain.png") no-repeat center;
+  /*height: 10em*/
+  margin-left: 15em;
+  width: calc(100% - 15em);
+  /*background: #ecf0f1*/
+  height: 200px;
+  background-size: cover;
+  background-position: bottom right; }
   header h1 {
-    font-size: 4em;
+    font-size: 5em;
     line-height: 1.4em;
-    margin: 0; }
+    margin: 0;
+    padding-left: 1em;
+    text-transform: uppercase; }
   header p {
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5em;
-    margin: 0; }
+    margin: 0;
+    font-size: 1.3em;
+    padding-left: 3em; }
+    header p:last-of-type {
+      margin-bottom: 1em; }
 
 nav {
-  background: #fff;
+  background: #62ad96;
   height: 100%;
   position: fixed;
   text-transform: uppercase;
   top: 0;
   width: 15em; }
-  nav:before {
-    content: url(images/logo.svg);
-    display: block;
-    width: 5em; }
   nav ul {
-    list-style: none; }
-    nav ul li:hover a {
-      color: #4b917b;
-      text-decoration: underline; }
-    nav ul li a {
-      color: #62ad96;
+    list-style: none;
+    margin-top: 5em; }
+    nav ul:before {
+      content: url(images/logo.svg);
       display: block;
-      font-size: 0.9em;
-      font-weight: bold;
-      padding: 0.5em 2em 0.5em 0;
-      text-decoration: inherit;
-      transition: color 0.5s; }
+      width: 5em; }
+    nav ul li {
+      margin: 0.5em 0; }
+      nav ul li:hover a {
+        color: #3a6f5f;
+        /*text-decoration: underline*/ }
+      nav ul li a {
+        color: #fff;
+        display: block;
+        font-size: 0.9em;
+        /*font-weight: bold*/
+        letter-spacing: 1.5px;
+        padding: 0.5em 2em 0.5em 0;
+        text-decoration: inherit;
+        transition: color 0.5s; }
 
 main {
   box-sizing: border-box;
   line-height: 1.8em;
   margin-left: 15em;
-  padding: 1em; }
+  padding: 2em; }
   main a {
     color: #62ad96;
     border: 1px solid #62ad96;
@@ -85,10 +112,12 @@ main {
         height: 10em;
         margin: auto;
         width: 20em; }
-  main dl dd {
-    margin-left: 0; }
-  main dl img {
-    display: block;
-    width: 10em; }
+  main dl {
+    display: flex; }
+    main dl dd {
+      margin-left: 0; }
+    main dl img {
+      display: block;
+      width: 10em; }
 
 /*# sourceMappingURL=style.sass.css.map */
