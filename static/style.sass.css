@@ -6,7 +6,7 @@ body {
   background: #f7fafb;
   color: #585858;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   font-family: 'PT Sans', sans-serif;
   margin: 0;
   min-height: 100vh; }
@@ -22,10 +22,8 @@ h2 {
   margin: 0; }
 
 header {
-  background: url(images/mountain.png) no-repeat center;
-  background-size: cover;
-  padding: 2em;
-  width: 100%; }
+  height: 10em;
+  margin-left: 15em; }
   header h1 {
     font-size: 4em;
     line-height: 1.4em;
@@ -36,71 +34,57 @@ header {
 
 nav {
   background: #fff;
-  border-right: 1px solid #eee;
-  /*background: #292929*/
-  padding: 2em 5em;
-  text-transform: uppercase; }
+  height: 100%;
+  position: fixed;
+  text-transform: uppercase;
+  top: 0;
+  width: 15em; }
   nav:before {
     content: url(images/logo.svg);
     display: block;
     width: 5em; }
   nav ul {
-    list-style: none;
-    padding: 0; }
-    nav ul li {
-      margin: 0 -2em; }
-      nav ul li:hover {
-        /*background: darken(#292929, 8%)*/ }
-        nav ul li:hover a {
-          color: #4b917b;
-          text-decoration: underline; }
-      nav ul li.active {
-        background: yellow; }
-        nav ul li.active a {
-          color: red; }
-      nav ul li a {
-        /*color: #fff*/
-        color: #62ad96;
-        font-size: 0.9em;
-        font-weight: bold;
-        display: block;
-        /*margin: 1em*/
-        padding: 0.5em 2em 0.5em 0;
-        text-decoration: inherit;
-        transition: color 0.5s; }
+    list-style: none; }
+    nav ul li:hover a {
+      color: #4b917b;
+      text-decoration: underline; }
+    nav ul li a {
+      color: #62ad96;
+      display: block;
+      font-size: 0.9em;
+      font-weight: bold;
+      padding: 0.5em 2em 0.5em 0;
+      text-decoration: inherit;
+      transition: color 0.5s; }
 
 main {
-  /*background: #ddd*/
-  flex: 1;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 4em 0;
-  line-height: 1.8em; }
+  box-sizing: border-box;
+  line-height: 1.8em;
+  margin-left: 15em;
+  padding: 1em; }
   main a {
     color: #62ad96;
     border: 1px solid #62ad96;
-    padding: 1em 2em;
-    margin: 0.5em 0;
     display: inline-block;
     font-weight: 700;
+    margin: 0.5em 0;
+    padding: 1em 2em;
     text-decoration: none;
     transition: background 0.3s; }
     main a:hover {
       background: #62ad96;
       color: #fff; }
-  main section#recto {
-    /*margin-right: 7em*/ }
   main section#recto, main section#verso {
     width: 50%; }
     main section#recto p, main section#verso p {
       width: 50%; }
       main section#recto p:first-of-type:before, main section#verso p:first-of-type:before {
-        display: block;
         background: #c3c3c3;
+        content: "";
+        display: block;
         height: 10em;
         margin: auto;
-        width: 20em;
-        content: ""; }
+        width: 20em; }
   main dl dd {
     margin-left: 0; }
   main dl img {
