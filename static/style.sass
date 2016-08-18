@@ -6,7 +6,6 @@ $text: #585858
 $title: #000
 
 body
-  background: #fff
   color: $text
   display: flex
   flex-flow: column wrap
@@ -78,13 +77,12 @@ h3
 
 header
   background: url("images/mountain.png") no-repeat center
+  box-sizing: border-box
   margin-left: 15em
   background-size: cover
   background-position: bottom right
   display: flex
   flex-direction: column
-
-  box-sizing: border-box
   width: calc(100% - 15em)
 
   h1
@@ -101,14 +99,13 @@ header
     background: rgba(0,0,0,0.4)
     color: #fff
     font-family: 'Source Sans Pro', sans-serif
+    font-size: 1.2em
     line-height: 1.5em
     margin: 0
-    font-size: 1.2em
     padding: 0 2em
 
     &:last-of-type
       padding-bottom: 1em
-
 
 nav
   background: $primary
@@ -150,8 +147,8 @@ main
   padding: 2em
 
   a
-    color: $primary
     border: 1px solid $primary
+    color: $primary
     display: inline-block
     font-weight: 700
     margin: 0.5em 0
