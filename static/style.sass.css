@@ -1,7 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700';
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700';
 @import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200';
 body {
   background: #fff;
   color: #585858;
@@ -113,11 +111,32 @@ main {
         margin: auto;
         width: 20em; }
   main dl {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2em;
+    /*justify-content: center*/
+    /*margin: auto*/ }
     main dl dd {
-      margin-left: 0; }
-    main dl img {
-      display: block;
-      width: 10em; }
+      box-sizing: border-box;
+      height: 300px;
+      margin-left: -220px;
+      padding: 260px 3em 0;
+      text-align: center;
+      width: 198px; }
+    main dl dt {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      height: 300px;
+      line-height: 60px;
+      margin: 0 -0.5px;
+      padding: 1em;
+      text-align: center;
+      width: 15em; }
+      main dl dt img {
+        display: block;
+        margin: 0 auto;
+        height: 200px; }
 
 /*# sourceMappingURL=style.sass.css.map */
