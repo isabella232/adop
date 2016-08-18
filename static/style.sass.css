@@ -1,7 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700';
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600';
 @import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
 body {
-  background: #fff;
   color: #585858;
   display: flex;
   flex-flow: column wrap;
@@ -28,6 +27,22 @@ body {
     body#download main ul li, body#links main ul li {
       margin: 0 0.5em;
       list-style: none; }
+  body#links main ul li {
+    width: 220px; }
+    body#links main ul li a {
+      border: none;
+      font-size: 0;
+      height: 200px;
+      width: 220px; }
+    body#links main ul li#ars a {
+      background: url("images/ars.png") no-repeat center;
+      background-size: 75%; }
+    body#links main ul li#ons a {
+      background: url("images/ons.png") no-repeat center;
+      background-size: 75%; }
+    body#links main ul li#urps a {
+      background: url("images/urps.png") no-repeat center;
+      background-size: 75%; }
   body#contact main ul li a {
     border: none;
     margin: 0;
