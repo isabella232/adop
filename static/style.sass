@@ -14,6 +14,53 @@ body
   margin: 0
   min-height: 100vh
 
+  &#home
+    main
+      background: #ecf0f1
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+
+      section
+        flex-wrap: wrap
+        padding: 0.5em 2em
+        text-align: center
+        width: 100%
+
+        h2:after
+          margin: 0.5em auto
+
+        &#verso
+          display: flex
+          justify-content: center
+          padding-top: 0
+
+          p
+            margin: 0 0.5em
+
+  &#download, &#links
+    main
+      ul
+        display: flex
+        flex-wrap: wrap
+        padding-left: 0
+
+        li
+          margin: 0 0.5em
+          list-style: none
+
+  &#contact
+    main
+      ul li a
+        border: none
+        margin: 0
+        padding: 0
+
+        &:hover
+          background: none
+          color: darken($primary, 5%)
+          text-decoration: underline
+
 h1,h2,h3,h4,h5
   color: #000
   font-family: 'Source Sans Pro', sans-serif
@@ -37,13 +84,11 @@ h3
 
 header
   background: url("images/mountain.png") no-repeat center
-  /*height: 10em*/
   margin-left: 15em
-  width: calc(100% - 15em)
-  /*background: #ecf0f1*/
   height: 200px
   background-size: cover
   background-position: bottom right
+  width: calc(100% - 15em)
 
   h1
     font-size: 5em
@@ -81,16 +126,15 @@ nav
 
     li
       margin: 0.5em 0
+
       &:hover
         a
           color: darken($primary, 20%)
-          /*text-decoration: underline*/
 
       a
         color: #fff
         display: block
         font-size: 0.9em
-        /*font-weight: bold*/
         letter-spacing: 1.5px
         padding: 0.5em 2em 0.5em 0
         text-decoration: inherit
@@ -115,25 +159,6 @@ main
     &:hover
       background: $primary
       color: #fff
-
-  section
-    &#recto
-
-    &#verso
-
-    &#recto, &#verso
-      width: 50%
-      p
-        width: 50%
-
-        &:first-of-type
-          &:before
-            background: #c3c3c3
-            content: ""
-            display: block
-            height: 10em
-            margin: auto
-            width: 20em
 
   dl
     display: flex
