@@ -9,20 +9,15 @@ body {
   margin: 0;
   min-height: 100vh; }
   body#home main {
-    background: #ecf0f1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
     body#home main section {
       flex-wrap: wrap;
       padding: 0.5em 2em;
-      text-align: center;
       width: 100%; }
-      body#home main section h2:after {
-        margin: 0.5em auto; }
       body#home main section#verso {
         display: flex;
-        justify-content: center;
         padding-top: 0; }
         body#home main section#verso p {
           margin: 0 0.5em; }
@@ -64,27 +59,32 @@ h3 {
 
 header {
   background: url("images/mountain.png") no-repeat center;
-  /*height: 10em*/
   margin-left: 15em;
-  width: calc(100% - 15em);
-  /*background: #ecf0f1*/
-  height: 200px;
   background-size: cover;
-  background-position: bottom right; }
+  background-position: bottom right;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: calc(100% - 15em); }
   header h1 {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
     font-size: 5em;
+    font-weight: bold;
     line-height: 1.4em;
     margin: 0;
-    padding-left: 1em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 0 0.5em; }
   header p {
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.5em;
     margin: 0;
-    font-size: 1.3em;
-    padding-left: 3em; }
+    font-size: 1.2em;
+    padding: 0 2em; }
     header p:last-of-type {
-      margin-bottom: 1em; }
+      padding-bottom: 1em; }
 
 nav {
   background: #62ad96;
@@ -103,13 +103,11 @@ nav {
     nav ul li {
       margin: 0.5em 0; }
       nav ul li:hover a {
-        color: #3a6f5f;
-        /*text-decoration: underline*/ }
+        color: #3a6f5f; }
       nav ul li a {
         color: #fff;
         display: block;
         font-size: 0.9em;
-        /*font-weight: bold*/
         letter-spacing: 1.5px;
         padding: 0.5em 2em 0.5em 0;
         text-decoration: inherit;
