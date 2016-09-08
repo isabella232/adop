@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-flow: column wrap;
   font-family: 'PT Sans', sans-serif;
+  font-size: 1.2em;
   margin: 0;
   min-height: 100vh; }
   body#download main ul, body#links main ul {
@@ -97,11 +98,11 @@ nav {
   width: 15em; }
   nav ul {
     list-style: none;
-    margin-top: 5em; }
+    margin-top: 3em; }
     nav ul:before {
       content: url(images/logo.svg);
       display: block;
-      width: 5em; }
+      width: 10em; }
     nav ul li {
       margin: 0.5em 0; }
       nav ul li:hover a {
@@ -120,6 +121,10 @@ main {
   line-height: 1.8em;
   margin-left: 15em;
   padding: 2em; }
+  main .phone {
+    font-size: 2em; }
+  main p {
+    text-align: justify; }
   main a {
     border: 1px solid #62ad96;
     color: #62ad96;
