@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>ADOP - {% block title %}Aide et Dispositif d'Orientation des Pharmaciens − Région Rhône-Alpes{% endblock title %}</title>
     <link type="image/png" rel="icon" href="{{ url_for('static', filename='favicon.png') }}" />
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.sass.css') }}" />
+    <script>/* Stupid hack for iOS :hover */ document.addEventListener("touchstart", function(){}, true);</script>
   </head>
 
   <body id="{{ page }}">

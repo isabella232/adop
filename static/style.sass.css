@@ -1,9 +1,11 @@
+@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600';
 @import 'https://fonts.googleapis.com/css?family=PT+Sans:400,700';
 body {
+  background: #fff;
   color: #585858;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   font-family: 'PT Sans', sans-serif;
   font-size: 1.2em;
   margin: 0;
@@ -101,7 +103,7 @@ nav {
     margin-top: 3em; }
     nav ul:before {
       content: url(images/logo.svg);
-      display: block;
+      display: inline-block;
       width: 10em; }
     nav ul li {
       margin: 0.5em 0; }
@@ -139,29 +141,64 @@ main {
       color: #fff; }
   main dl {
     display: flex;
-    flex-wrap: wrap;
-    margin-left: -2em; }
-    main dl dd {
-      box-sizing: border-box;
-      height: 300px;
-      margin-left: -220px;
-      padding: 260px 3em 0;
-      text-align: center;
-      width: 198px; }
+    flex-wrap: wrap; }
     main dl dt {
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
       font-weight: bold;
-      height: 300px;
-      line-height: 60px;
-      margin: 0 -0.5px;
-      padding: 1em;
       text-align: center;
-      width: 15em; }
+      margin-bottom: 3em;
+      width: 200px; }
       main dl dt img {
         display: block;
-        margin: 0 auto;
+        margin: 1em auto;
         height: 200px; }
+    main dl dd {
+      margin: 0;
+      text-align: center;
+      width: 200px;
+      position: absolute;
+      margin-left: -200px;
+      margin-top: calc(200px + 3.5em); }
+
+@media (max-width: 50em) {
+  nav, header, main {
+    margin: 0;
+    position: static;
+    width: auto; }
+  header {
+    background: #62ad96;
+    display: block;
+    font-size: 0.5em; }
+    header h1, header p {
+      background-color: transparent;
+      text-align: center; }
+  nav {
+    height: 0;
+    text-align: center;
+    overflow: hidden; }
+    nav:after {
+      color: white;
+      content: '☰';
+      display: block;
+      width: 2em;
+      line-height: 2em;
+      top: 0;
+      right: 0;
+      position: absolute; }
+    nav ul {
+      margin: 0;
+      padding: 0; }
+      nav ul:before {
+        display: none; }
+      nav ul li {
+        margin: 0; }
+        nav ul li a {
+          padding: 0.5em 0; }
+  header:hover + nav, nav:hover {
+    height: auto; }
+  main {
+    hyphens: auto;
+    min-height: 100vh; }
+    main .phone {
+      font-size: 1.2em; } }
 
 /*# sourceMappingURL=style.sass.css.map */
