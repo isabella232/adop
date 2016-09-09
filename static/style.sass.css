@@ -141,11 +141,13 @@ main {
       color: #fff; }
   main dl {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     main dl dt {
       font-weight: bold;
       text-align: center;
-      margin-bottom: 3em;
+      margin-bottom: 2.5em;
+      margin-top: 1em;
       width: 200px; }
       main dl dt img {
         display: block;
@@ -155,9 +157,8 @@ main {
       margin: 0;
       text-align: center;
       width: 200px;
-      position: absolute;
       margin-left: -200px;
-      margin-top: calc(200px + 3.5em); }
+      margin-top: calc(200px + 4.5em); }
 
 @media (max-width: 50em) {
   nav, header, main {
@@ -167,7 +168,7 @@ main {
   header {
     background: #62ad96;
     display: block;
-    font-size: 0.5em; }
+    font-size: 0.6em; }
     header h1, header p {
       background-color: transparent;
       text-align: center; }
@@ -185,7 +186,7 @@ main {
       right: 0;
       position: absolute; }
     nav ul {
-      margin: 0;
+      margin: 0 0 0.5em 0;
       padding: 0; }
       nav ul:before {
         display: none; }
@@ -199,6 +200,10 @@ main {
     hyphens: auto;
     min-height: 100vh; }
     main .phone {
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+    main dl {
+      margin: auto; }
+    main p {
+      text-align: left; } }
 
 /*# sourceMappingURL=style.sass.css.map */

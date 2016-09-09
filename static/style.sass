@@ -179,11 +179,13 @@ main
   dl
     display: flex
     flex-wrap: wrap
+    justify-content: center
 
     dt
       font-weight: bold
       text-align: center
-      margin-bottom: 3em
+      margin-bottom: 2.5em
+      margin-top: 1em
       width: 200px
 
       img
@@ -195,9 +197,8 @@ main
       margin: 0
       text-align: center
       width: 200px
-      position: absolute
       margin-left: -200px
-      margin-top: calc(200px + 3.5em)
+      margin-top: calc(200px + 4.5em)
 
 @media (max-width: 50em)
   nav, header, main
@@ -208,7 +209,7 @@ main
   header
     background: $primary
     display: block
-    font-size: 0.5em
+    font-size: 0.6em
 
     h1, p
       background-color: transparent
@@ -230,7 +231,7 @@ main
       position: absolute
 
     ul
-      margin: 0
+      margin: 0 0 0.5em 0
       padding: 0
 
       &:before
@@ -251,3 +252,9 @@ main
 
     .phone
       font-size: 1.2em
+
+    dl
+      margin: auto
+
+    p
+      text-align: left
