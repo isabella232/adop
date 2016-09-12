@@ -64,6 +64,19 @@ body
           color: darken($primary, 5%)
           text-decoration: underline
 
+  &#home
+    main
+      display: flex
+      flex-wrap: wrap
+
+      article
+        flex-grow: 1
+
+        &:last-child
+          max-width: 40em
+          min-width: 20em
+          text-align: right
+
 h1,h2,h3,h4,h5
   color: #000
   font-family: 'Source Sans Pro', sans-serif

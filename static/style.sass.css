@@ -41,6 +41,15 @@ body {
       background: none;
       color: #54a18a;
       text-decoration: underline; }
+  body#home main {
+    display: flex;
+    flex-wrap: wrap; }
+    body#home main article {
+      flex-grow: 1; }
+      body#home main article:last-child {
+        max-width: 40em;
+        min-width: 20em;
+        text-align: right; }
 
 h1, h2, h3, h4, h5 {
   color: #000;
