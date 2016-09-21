@@ -21,14 +21,14 @@
 
     <nav>
       <ul>
-        <li><a href="{{ url_for('page', page='home', region=None) }}">Accueil</a></li>
-        <li><a href="{{ url_for('page', page='history', region=region) }}">Historique</a></li>
-        <li><a href="{{ url_for('page', page='actions', region=region) }}">Actions</a></li>
-        <li><a href="{{ url_for('page', page='operation', region=region) }}">Fonctionnement</a></li>
-        <li><a href="{{ url_for('page', page='news', region=region) }}">Actualités</a></li>
-        <li><a href="{{ url_for('page', page='download', region=region) }}">Téléchargement</a></li>
-        <li><a href="{{ url_for('page', page='links', region=region) }}">Liens partenaires</a></li>
-        <li><a href="{{ url_for('page', page='contact', region=region) }}">Contact</a></li>
+        <li><a href="{{ url_for('page', page='home', region_id=None) }}">Accueil</a></li>
+        <li><a href="{{ url_for('page', page='history', region_id=region_id) }}">Historique</a></li>
+        <li><a href="{{ url_for('page', page='actions', region_id=region_id) }}">Actions</a></li>
+        <li><a href="{{ url_for('page', page='operation', region_id=region_id) }}">Fonctionnement</a></li>
+        <li><a href="{{ url_for('page', page='news', region_id=region_id) }}">Actualités</a></li>
+        <li><a href="{{ url_for('page', page='download', region_id=region_id) }}">Téléchargement</a></li>
+        <li><a href="{{ url_for('page', page='links', region_id=region_id) }}">Liens partenaires</a></li>
+        <li><a href="{{ url_for('page', page='contact', region_id=region_id) }}">Contact</a></li>
       </ul>
     </nav>
 

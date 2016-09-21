@@ -15,10 +15,17 @@ REGIONS = {
 @app.route('/region-<any{}:region_id>/'.format(tuple(REGIONS)))
 @app.route('/region-<any{}:region_id>/<page>'.format(tuple(REGIONS)))
 def page(page='home', region_id=None):
+    if region_id:
+        try:
+            return render_template(
+                '{}-{}.html'.format(region_id, page), page=page,
+                region_id=region_id, region=REGIONS[region_id])
+        except TemplateNotFound:
+            pass
     try:
         return render_template(
-            '{}.html'.format(page), page=page, region_id=region_id,
-            region=(REGIONS[region_id] if region_id else None))
+            '{}.html'.format(page), page=page,
+            region_id=region_id, region=(REGIONS.get(region_id)))
     except TemplateNotFound:
         abort(404)
 
