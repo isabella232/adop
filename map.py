@@ -16,7 +16,7 @@ graph = Regions(
     config, show_legend=False, tooltip_fancy_mode=False, style=style,
     stroke_style={'width': 5})
 graph.add('Rhône-Alpes', [{'value': 82, 'xlink': {
-    'href': '/region-Rhône-Alpes/', 'target': '_top'}}])
+    'href': '/region-rhone-alpes/', 'target': '_top'}}])
 svg = graph.render()
 
 svg = svg.replace(b': 1<', b'<')

@@ -5,17 +5,20 @@ from jinja2.exceptions import TemplateNotFound
 
 
 app = Flask(__name__)
-REGIONS = ('Rhône-Alpes',)
+REGIONS = {
+    'rhone-alpes': 'Rhône-Alpes',
+}
 
 
 @app.route('/')
 @app.route('/<page>')
-@app.route('/region-<any{}:region>/'.format(REGIONS))
-@app.route('/region-<any{}:region>/<page>'.format(REGIONS))
-def page(page='home', region=None):
+@app.route('/region-<any{}:region_id>/'.format(tuple(REGIONS)))
+@app.route('/region-<any{}:region_id>/<page>'.format(tuple(REGIONS)))
+def page(page='home', region_id=None):
     try:
         return render_template(
-            '{}.html'.format(page), page=page, region=region)
+            '{}.html'.format(page), page=page, region_id=region_id,
+            region=(REGIONS[region_id] if region_id else None))
     except TemplateNotFound:
         abort(404)
 

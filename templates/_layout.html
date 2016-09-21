@@ -6,6 +6,9 @@
     <title>ADOP - {% block title %}Aide et Dispositif d'Orientation des Pharmaciens{% if region %} − Région {{ region }}{% endif %}{% endblock title %}</title>
     <link type="image/png" rel="icon" href="{{ url_for('static', filename='favicon.png') }}" />
     <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.sass.css') }}" />
+    {% if region %}
+      <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style-{}.sass.css'.format(region_id)) }}" />
+    {% endif %}
     <script>/* Stupid hack for iOS :hover */ document.addEventListener("touchstart", function(){}, true);</script>
   </head>
 
