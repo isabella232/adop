@@ -1,2 +1,5 @@
+.cache
+.env
 *.map
+*.egg-info
 __pycache__
